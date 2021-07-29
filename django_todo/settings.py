@@ -31,10 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-if development:
-    ALLOWED_HOSTS = ['https://mtalcs-django-todo-app.herokuapp.com', 'localhost']
-else:
-    ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME")]
+ALLOWED_HOSTS = ['https://mtalcs-django-todo-app.herokuapp.com', 'localhost']
 
 
 # Application definition
